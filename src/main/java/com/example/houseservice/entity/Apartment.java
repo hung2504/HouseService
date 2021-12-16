@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class Apartment extends House{
+public class Apartment implements House{
 
     @Id
     @GeneratedValue
@@ -24,6 +24,6 @@ public class Apartment extends House{
 
     @Override
     public int getCost() {
-        return super.getCost();
+        return 0;
     }
 }

@@ -9,21 +9,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.io.Serializable;
 
-@AllArgsConstructor
-@NoArgsConstructor
-public class House implements Serializable {
+public interface House {
 
-    private String name;
-    private double price;
-    private String description;
-
-    public int getCost(){
-        return 0;
-    }
-    private String getName(){
-        return name;
-    }
-    private String getDescription(){
-        return description;
-    }
+     int getCost();
+     String getName();
+     String getDescription();
 }
